@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,5 +8,28 @@
 <body>
     <h1>Payment</h1>
     <img src="~/img/qr.jpg" alt="UPI Id , Please pay to continue" width="500" height="auto">
+</body>
+</html>
+ *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction and Payment</title>
+</head>
+<body>
+    <h1>Payment</h1>
+    <img src="~/img/qr.jpg" alt="UPI Id, Please pay to continue" width="500" height="auto">
+
+    <h2>Enter Transaction Details</h2>
+    <form asp-controller="Transaction" asp-action="SaveTransaction" method="post">
+        <label for="transactionData">Transaction Info:</label>
+        <input type="text" id="transactionData" name="TransactionData" required>
+        <button type="submit">Submit</button>
+    </form>
+
+
 </body>
 </html>

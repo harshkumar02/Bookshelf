@@ -20,6 +20,7 @@ namespace ThebookshelfUI.Data
 
         public DbSet<OrderStatus> orderStatuses { get; set; }
         public DbSet<Stock> Stocks { get; set; }
+        public DbSet<TransactionDetail> TransactionDetails { get; set; }
 
     }
 }
